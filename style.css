@@ -1,0 +1,173 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+.top-section .heading {
+  display: flex;
+}
+.top-section .heading h1 {
+  font-size: 32px;
+}
+.top-section .heading img {
+  height: 100px;
+  width: 100px;
+}
+.top-section .menu {
+  display: none;
+}
+.top-section .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.top-section .navbar a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.mid-section {
+  display: flex;
+  justify-content: space-around;
+}
+.mid-section div {
+  background: pink;
+  margin: 30px;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.mid-section div h2 {
+  font-size: 24px;
+  border: 0.5px solid black;
+  align-self: self-end;
+  text-align: center;
+  padding: 5px;
+  background-color: aquamarine;
+  margin: 0;
+  border-radius: 12px;
+  width: 30%;
+}
+.mid-section div p {
+  padding: 10px;
+  text-align: justify;
+  margin: 5px;
+  margin-top: 3vw;
+}
+
+.bottom-section {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  margin-top: 15rem;
+  height: 5rem;
+}
+.bottom-section p {
+  margin: 0px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+  .top-section {
+    position: relative;
+  }
+  .top-section h1 {
+    display: none;
+  }
+  .top-section .navbar {
+    display: none;
+  }
+  .top-section .menu {
+    display: block;
+    margin: 10px;
+    padding: 5px;
+  }
+  .top-section .menu .hamburger {
+    background: beige;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+  }
+  .mid-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .mid-section div {
+    margin: 30px;
+    padding: 10px;
+  }
+  .bottom-section {
+    margin-top: 5rem;
+  }
+}
+/*tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  .top-section {
+    position: relative;
+  }
+  .top-section .navbar {
+    display: none;
+  }
+  .top-section .menu {
+    display: block;
+  }
+  .top-section .menu .hamburger {
+    background: beige;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+  }
+  .mid-section {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+    gap: 20px;
+    margin: 30px;
+  }
+  .mid-section .left-container {
+    grid-row: span 1;
+    grid-column: span 2;
+    margin: 5px;
+  }
+  .mid-section .mid-container {
+    grid-row: span 2;
+    grid-column: span 1;
+    margin: 5px;
+  }
+  .mid-section .right-container {
+    grid-row: span 2;
+    grid-column: span 1;
+    margin: 5px;
+  }
+  .bottom-section {
+    margin-top: 5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
