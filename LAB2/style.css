@@ -1,0 +1,12 @@
+.table{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.author-div .title-div .buttons{
+    flex: 1;
+}
